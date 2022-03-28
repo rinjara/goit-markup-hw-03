@@ -3,6 +3,7 @@
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
   --main-white: #ffffff;
+  --secondary-bg-color: #2f303a;
 }
 
 body {
@@ -15,6 +16,15 @@ body {
 
 .page-header {
   background-color: #ffffff;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  outline: 2px solid tomato;
 }
 
 /* logo */
@@ -33,6 +43,9 @@ body {
 
 /* header */
 .list {
+  padding: 0;
+  margin: 0;
+
   list-style: none;
 }
 .link {
@@ -64,20 +77,34 @@ body {
 
 /* hero */
 .hero {
-  background-color: #2f303a;
+  outline: 2px solid tomato;
+
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  background-color: var(--secondary-bg-color);
+  text-align: center;
 }
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   color: var(--main-white);
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
 
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 .hero-button {
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  min-width: 200px;
+  border: none;
+
   color: var(--main-white);
   background-color: var(--accent-color);
   cursor: pointer;
@@ -94,11 +121,20 @@ body {
 }
 
 /* section skills */
+.skills {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .hidden-title {
   /* нужно его спрятать */
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .skills-list h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -106,6 +142,9 @@ body {
   text-transform: uppercase;
 }
 .skills-list p {
+  margin-top: 0;
+  margin-bottom: 0;
+
   color: var(--secondary-text-color);
 
   font-size: 14px;
@@ -113,26 +152,46 @@ body {
 }
 
 /* work areas section */
+.work-areas {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 94px;
+}
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
+
 /* team section */
 .team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
   background-color: #f5f4fa;
 }
 .team-member {
+  padding-bottom: 30px;
+
   background-color: var(--main-white);
 }
 .name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
 }
 .position {
+  margin-top: 0;
+  margin-bottom: 0;
+
   color: var(--secondary-text-color);
 
   font-size: 16px;
@@ -177,7 +236,13 @@ body {
 
 /* footer */
 .page-footer {
-  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--secondary-bg-color);
+}
+.footer-logo {
+  margin-bottom: 20px;
 }
 .white-logo {
   color: var(--main-white);
