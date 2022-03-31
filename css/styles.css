@@ -111,8 +111,9 @@ body {
   text-align: center;
 }
 .hero-title {
-  margin-top: 0;
+  margin: 0 auto;
   margin-bottom: 30px;
+  width: 696px;
 
   color: var(--main-white);
 
@@ -161,9 +162,17 @@ body {
   padding-bottom: 94px;
 }
 .hidden-title {
-  /* нужно его спрятать */
-  margin-top: 0;
-  margin-bottom: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .skills-list {
   display: flex;
@@ -226,12 +235,14 @@ body {
 }
 
 .team-member {
-  padding-bottom: 30px;
-
   background-color: var(--main-white);
 }
+.description {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .name {
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -322,7 +333,7 @@ body {
 }
 .project-title {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 4px;
 
   font-weight: 700;
   font-size: 18px;
@@ -346,16 +357,20 @@ body {
 
   background-color: var(--secondary-bg-color);
 }
-.footer-logo {
-  margin-bottom: 20px;
-}
 .white-logo {
+  display: block;
+  margin-bottom: 20px;
+
   color: var(--main-white);
 
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+}
+.address-list > li:not(:last-child) {
+  display: block;
+  margin-bottom: 9px;
 }
 .address-list .link {
   color: rgba(255, 255, 255, 0.6);
