@@ -263,11 +263,12 @@ body {
 
 /* Portfolio */
 /* filter */
-.filter {
+.projects {
   padding-top: 94px;
-  padding-bottom: 50px;
+  padding-bottom: 94px;
 }
 .filter-list {
+  padding-bottom: 50px;
   display: flex;
   justify-content: center;
 }
@@ -303,9 +304,6 @@ body {
 }
 
 /* gallery */
-.projects {
-  padding-bottom: 94px;
-}
 .projects-list {
   display: flex;
   flex-wrap: wrap;
